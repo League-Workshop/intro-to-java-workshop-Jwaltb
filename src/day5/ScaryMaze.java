@@ -12,6 +12,7 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import javax.swing.JApplet;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
@@ -46,9 +47,9 @@ int background=-16777216;
 				// call the scare method
 		scare();}
 		//10. if the mouse is on the end color
-				
+				if(mouseColor==-131072) {
 				// pop up a message to tell them they won
-		
+		JOptionPane.showMessageDialog(null, "You won");}
 	}
 
 	private void scare() {
